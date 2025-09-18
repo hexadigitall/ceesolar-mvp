@@ -49,14 +49,7 @@ const ServicesOverview = ({
 }: ServicesProps) => {
     const cardVariants = {
         hidden: { opacity: 0, y: 50 },
-        visible: {
-            opacity: 1,
-            y: 0,
-            transition: {
-                duration: 0.6,
-                ease: "easeOut"
-            }
-        }
+        visible: { opacity: 1, y: 0 }
     };
 
     const getIconComponent = (index: number) => {
@@ -100,7 +93,7 @@ const ServicesOverview = ({
                             whileInView="visible"
                             viewport={{ once: true }}
                             variants={cardVariants}
-                            transition={{ delay: i * 0.2 }}
+                            transition={{ delay: i * 0.2, duration: 0.6, ease: "easeOut" }}
                             className="h-full"
                         >
                             <Card className="h-full flex flex-col border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 bg-white/80 backdrop-blur-sm">
