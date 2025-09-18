@@ -49,15 +49,14 @@ const ServicesOverview = ({
 }: ServicesProps) => {
     const cardVariants = {
         hidden: { opacity: 0, y: 50 },
-        visible: (i: number) => ({
+        visible: {
             opacity: 1,
             y: 0,
-                transition: {
-                delay: i * 0.2,
+            transition: {
                 duration: 0.6,
-                ease: [0.25, 0.46, 0.45, 0.94]
-            },
-        }),
+                ease: "easeOut"
+            }
+        }
     };
 
     const getIconComponent = (index: number) => {
@@ -97,11 +96,11 @@ const ServicesOverview = ({
                     {(services || defaultServices).map((service, i) => (
                         <motion.div
                             key={service.title}
-                            custom={i}
                             initial="hidden"
                             whileInView="visible"
                             viewport={{ once: true }}
                             variants={cardVariants}
+                            transition={{ delay: i * 0.2 }}
                             className="h-full"
                         >
                             <Card className="h-full flex flex-col border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 bg-white/80 backdrop-blur-sm">
