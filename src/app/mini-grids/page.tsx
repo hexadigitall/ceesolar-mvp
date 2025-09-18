@@ -70,23 +70,23 @@ export default function MiniGridsPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative py-24 bg-gradient-to-br from-primary to-secondary overflow-hidden">
+      <section className="relative py-16 sm:py-20 lg:py-24 bg-gradient-to-br from-primary to-secondary overflow-hidden">
         <div className="absolute inset-0 bg-black/10"></div>
-        <div className="container relative z-10 text-center text-white">
+        <div className="container relative z-10 text-center text-white px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
-            className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-8"
+            className="w-16 h-16 sm:w-20 sm:h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6 sm:mb-8"
           >
-            <Zap className="w-10 h-10" />
+            <Zap className="w-8 h-8 sm:w-10 sm:h-10" />
           </motion.div>
           
           <motion.h1 
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-4xl md:text-6xl font-bold font-montserrat mb-6"
+            className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold font-montserrat mb-6"
           >
             Mini-Grids
           </motion.h1>
@@ -95,7 +95,7 @@ export default function MiniGridsPage() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed mb-8"
+            className="text-base sm:text-lg lg:text-xl xl:text-2xl max-w-3xl mx-auto leading-relaxed mb-6 sm:mb-8"
           >
             Transforming communities with reliable, sustainable mini-grid solutions that provide 24/7 power access to underserved areas
           </motion.p>
@@ -105,18 +105,18 @@ export default function MiniGridsPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            <Button className="bg-white text-primary hover:bg-gray-50 px-8 py-4 text-lg">
+            <Button className="bg-white text-primary hover:bg-gray-50 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg">
               Start Your Project
-              <ArrowRight className="w-5 h-5 ml-2" />
+              <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2" />
             </Button>
           </motion.div>
         </div>
       </section>
 
       {/* What Are Mini-Grids Section */}
-      <section className="py-24 bg-white">
-        <div className="container">
-          <div className="grid gap-12 lg:grid-cols-2 items-center">
+      <section className="py-16 sm:py-20 lg:py-24 bg-white">
+        <div className="container px-4 sm:px-6">
+          <div className="grid gap-8 sm:gap-12 lg:grid-cols-2 items-center">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}

@@ -37,18 +37,18 @@ const HeroSection = ({
             <div className="absolute bottom-40 left-20 w-28 h-28 bg-gradient-to-tl from-primary/15 to-white/8 rounded-full blur-xl opacity-50 animate-pulse" style={{animationDuration: '8s'}} />
             <div className="absolute top-1/3 left-1/3 w-20 h-20 bg-gradient-to-r from-secondary/12 to-primary/10 rounded-2xl blur-lg opacity-30 animate-pulse" style={{animationDuration: '10s'}} />
             
-            <div className="container relative z-20 text-center text-white py-20">
+            <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-20 text-center text-white py-16 sm:py-20">
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
-                    className="max-w-4xl mx-auto"
+                    className="max-w-5xl mx-auto"
                 >
                     <motion.h1 
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.2 }}
-                        className="text-4xl md:text-6xl lg:text-7xl font-bold font-montserrat tracking-tight mb-6"
+                        className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold font-montserrat tracking-tight mb-6 px-4 sm:px-0"
                     >
                         {headline}
                     </motion.h1>
@@ -57,7 +57,7 @@ const HeroSection = ({
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.4 }}
-                        className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed"
+                        className="text-lg sm:text-xl lg:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed px-4 sm:px-0"
                     >
                         {subheading}
                     </motion.p>
@@ -68,16 +68,16 @@ const HeroSection = ({
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.6 }}
-                    className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10 max-w-3xl mx-auto"
+                    className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-10 max-w-4xl mx-auto"
                 >
                     {subpoints.map((point, index) => {
                         const icons = [Zap, Shield, Leaf];
                         const colors = ['text-primary', 'text-secondary', 'text-accent'];
                         const IconComponent = icons[index] || Zap;
                         return (
-                            <div key={point} className="flex items-center justify-center space-x-2 text-lg">
-                                <IconComponent className={`w-6 h-6 ${colors[index] || 'text-primary'}`} />
-                                <span>{point}</span>
+                            <div key={point} className="flex items-center justify-center space-x-2 text-base sm:text-lg py-2">
+                                <IconComponent className={`w-5 h-5 sm:w-6 sm:h-6 ${colors[index] || 'text-primary'} flex-shrink-0`} />
+                                <span className="text-center">{point}</span>
                             </div>
                         );
                     })}
@@ -88,21 +88,21 @@ const HeroSection = ({
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.8 }}
-                    className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6"
+                    className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6 max-w-md mx-auto"
                 >
                     <Button 
                         size="lg" 
-                        className="bg-white text-primary hover:bg-gray-50 shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 group px-8 py-4 text-lg border-0"
+                        className="w-full sm:w-auto h-12 bg-white text-primary hover:bg-gray-50 shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 group px-8 text-base font-medium border-0"
                     >
                         <Calculator className="w-5 h-5 mr-2" />
-                        Explore Our Solutions
+                        Explore Solutions
                         <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                     </Button>
                     
                     <Button 
                         size="lg" 
                         variant="outline"
-                        className="border-2 border-white/80 text-white hover:bg-white hover:text-primary backdrop-blur-sm bg-white/5 transition-all duration-300 group px-8 py-4 text-lg hover:border-white hover:shadow-lg"
+                        className="w-full sm:w-auto h-12 border-2 border-white/80 text-white hover:bg-white hover:text-primary backdrop-blur-sm bg-white/5 transition-all duration-300 group px-8 text-base font-medium hover:border-white hover:shadow-lg"
                     >
                         <Phone className="w-5 h-5 mr-2" />
                         Contact Us
@@ -114,9 +114,9 @@ const HeroSection = ({
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 1 }}
-                    className="mt-16 text-center"
+                    className="mt-12 sm:mt-16 text-center px-4 sm:px-0"
                 >
-                    <p className="text-sm text-white/80 mb-6">Trusted by leading organizations across Nigeria</p>
+                    <p className="text-xs sm:text-sm text-white/80 mb-4 sm:mb-6">Trusted by leading organizations across Nigeria</p>
                     <PartnerLogos />
                 </motion.div>
             </div>

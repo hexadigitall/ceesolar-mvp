@@ -38,14 +38,14 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative py-24 bg-gradient-to-br from-primary to-secondary overflow-hidden">
+      <section className="relative py-16 sm:py-20 lg:py-24 bg-gradient-to-br from-primary to-secondary overflow-hidden">
         <div className="absolute inset-0 bg-black/10"></div>
-        <div className="container relative z-10 text-center text-white">
+        <div className="container relative z-10 text-center text-white px-4 sm:px-6">
           <motion.h1 
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-4xl md:text-6xl font-bold font-montserrat mb-6"
+            className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold font-montserrat mb-6"
           >
             About Ceesolar
           </motion.h1>
@@ -53,7 +53,7 @@ export default function AboutPage() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed"
+            className="text-base sm:text-lg lg:text-xl xl:text-2xl max-w-3xl mx-auto leading-relaxed"
           >
             Accelerating energy access across Africa through innovative renewable energy solutions
           </motion.p>
@@ -61,9 +61,9 @@ export default function AboutPage() {
       </section>
 
       {/* Mission & Vision Section */}
-      <section className="py-24 bg-white">
-        <div className="container">
-          <div className="grid gap-12 lg:grid-cols-2 items-center">
+      <section className="py-16 sm:py-20 lg:py-24 bg-white">
+        <div className="container px-4 sm:px-6">
+          <div className="grid gap-8 sm:gap-12 lg:grid-cols-2 items-center">
             <div>
               <motion.div
                 initial={{ opacity: 0, x: -30 }}
@@ -106,22 +106,22 @@ export default function AboutPage() {
       </section>
 
       {/* Values Section */}
-      <section className="py-24 bg-gray-50">
-        <div className="container">
+      <section className="py-16 sm:py-20 lg:py-24 bg-gray-50">
+        <div className="container px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="text-center mb-16"
+            className="text-center mb-12 sm:mb-16"
           >
-            <h2 className="text-4xl font-bold font-montserrat mb-4">Our Values</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h2 className="text-3xl sm:text-4xl font-bold font-montserrat mb-4">Our Values</h2>
+            <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               The principles that guide our work and define our commitment to excellence
             </p>
           </motion.div>
 
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-4">
             {values.map((value, index) => (
               <motion.div
                 key={value.title}
