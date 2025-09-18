@@ -1,12 +1,8 @@
-import { Metadata } from 'next';
-import Image from 'next/image';
+'use client';
+
+import React from 'react';
 import { motion } from 'framer-motion';
 import { Target, Eye, Award, Users, Globe, Zap } from 'lucide-react';
-
-export const metadata: Metadata = {
-  title: 'About Us | Ceesolar Energy Limited',
-  description: 'Learn about Ceesolar Energy Limited - accelerating energy access across Africa through innovative renewable energy solutions.',
-};
 
 export default function AboutPage() {
   const values = [

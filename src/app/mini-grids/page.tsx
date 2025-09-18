@@ -1,12 +1,9 @@
-import { Metadata } from 'next';
+'use client';
+
+import React from 'react';
 import { motion } from 'framer-motion';
 import { Zap, Users, Lightbulb, TrendingUp, CheckCircle, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-
-export const metadata: Metadata = {
-  title: 'Mini-Grids | Ceesolar Energy Limited',
-  description: 'Transforming communities with reliable, sustainable mini-grid solutions. Distributed renewable energy systems providing 24/7 power access to underserved areas.',
-};
 
 export default function MiniGridsPage() {
   const benefits = [
@@ -147,7 +144,7 @@ export default function MiniGridsPage() {
               viewport={{ once: true }}
               className="grid gap-4 md:grid-cols-2"
             >
-              {benefits.map((benefit, index) => (
+              {benefits.map((benefit) => (
                 <div key={benefit.title} className="p-6 bg-gray-50 rounded-xl">
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                     <benefit.icon className="w-6 h-6 text-primary" />

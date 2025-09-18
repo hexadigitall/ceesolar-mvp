@@ -1,6 +1,5 @@
 'use client';
 import { useState } from 'react';
-import { Metadata } from 'next';
 import { motion } from 'framer-motion';
 import { MapPin, Phone, Mail, Clock, Send, MessageSquare } from 'lucide-react';
 import { Button } from '@/components/ui/button';
