@@ -169,7 +169,7 @@ const ServicesOverview = ({
                     <div className="bg-gradient-to-r from-primary to-secondary rounded-2xl p-8 text-white">
                         <h3 className="text-2xl font-bold mb-4">Ready to Power Your Future?</h3>
                         <p className="text-lg mb-6 opacity-90">
-                            Partner with Africa's leading energy innovators. Let's develop sustainable energy solutions that drive your success.
+                            Partner with Africa&apos;s leading energy innovators. Let&apos;s develop sustainable energy solutions that drive your success.
                         </p>
                         <Button 
                             variant="secondary" 

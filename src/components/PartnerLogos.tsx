@@ -30,7 +30,7 @@ const PartnerLogos = () => {
 
     return (
         <div className="flex justify-center items-center space-x-8 flex-wrap gap-4">
-            {partners.map((partner, index) => (
+            {partners.map((partner) => (
                 <div key={partner.name} className="flex items-center justify-center opacity-70 hover:opacity-100 transition-opacity duration-300">
                     <Image
                         src={partner.logo}
