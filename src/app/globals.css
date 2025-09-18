@@ -3,13 +3,49 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  
+  /* Ceesolar Professional Brand Colors - Corrected with Green Primary */
+  --primary: #5AB963;    /* Ceesolar Green - Primary */
+  --secondary: #004A99;  /* Ceesolar Blue - Secondary */
+  --accent: #F3B41E;     /* Ceesolar Gold/Yellow - Accent */
+  
+  /* Additional colors for professional look */
+  --muted: #f8fafc;
+  --muted-foreground: #64748b;
+  --border: #e2e8f0;
+  --input: #e2e8f0;
+  --ring: #FF6B35;
+  
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+  
+  --radius: 0.5rem;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  
+  /* Typography */
+  --font-sans: var(--font-inter), system-ui, -apple-system, sans-serif;
+  --font-montserrat: var(--font-montserrat), system-ui, -apple-system, sans-serif;
+  --font-mono: 'Courier New', monospace;
+  
+  /* Add font classes */
+  --color-font-montserrat: var(--font-montserrat);
+  
+  /* Spacing */
+  --radius: var(--radius);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +58,33 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Base styling for containers */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+/* Font utility classes */
+.font-montserrat {
+  font-family: var(--font-montserrat), system-ui, -apple-system, sans-serif;
 }
