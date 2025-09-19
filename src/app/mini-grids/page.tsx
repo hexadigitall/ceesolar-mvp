@@ -124,7 +124,7 @@ export default function MiniGridsPage() {
               viewport={{ once: true }}
             >
               <h2 className="text-4xl font-bold font-montserrat mb-6">What Are Mini-Grids?</h2>
-              <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
+              <div className="space-y-4 text-lg text-gray-900 leading-relaxed">
                 <p>
                   Mini-grids are localized electricity distribution networks that operate independently from the national grid. They provide reliable, clean energy to communities that are either unconnected or poorly served by centralized power systems.
                 </p>
@@ -150,7 +150,7 @@ export default function MiniGridsPage() {
                     <benefit.icon className="w-6 h-6 text-primary" />
                   </div>
                   <h3 className="text-lg font-semibold mb-2">{benefit.title}</h3>
-                  <p className="text-gray-600 text-sm">{benefit.description}</p>
+                  <p className="text-gray-900 text-sm">{benefit.description}</p>
                 </div>
               ))}
             </motion.div>
@@ -169,7 +169,7 @@ export default function MiniGridsPage() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl font-bold font-montserrat mb-4">Key Features & Capabilities</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-900 max-w-3xl mx-auto">
               Our mini-grid systems are designed with cutting-edge technology and community-centric approaches
             </p>
           </motion.div>
@@ -185,7 +185,7 @@ export default function MiniGridsPage() {
                 className="flex items-center space-x-3 p-4 bg-white rounded-lg shadow-sm"
               >
                 <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
-                <span className="text-gray-700">{feature}</span>
+                <span className="text-gray-900">{feature}</span>
               </motion.div>
             ))}
           </div>
@@ -203,7 +203,7 @@ export default function MiniGridsPage() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl font-bold font-montserrat mb-4">Our Mini-Grid Projects</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-900 max-w-3xl mx-auto">
               Real impact across communities - transforming lives through reliable energy access
             </p>
           </motion.div>
@@ -232,16 +232,16 @@ export default function MiniGridsPage() {
                 </div>
                 
                 <h3 className="text-xl font-semibold mb-2">{project.name}</h3>
-                <p className="text-gray-600 mb-4">{project.location}</p>
+                <p className="text-gray-900 mb-4">{project.location}</p>
                 
                 <div className="space-y-2 mb-4">
                   <div className="flex justify-between">
-                    <span className="text-gray-600">Beneficiaries:</span>
+                    <span className="text-gray-900">Beneficiaries:</span>
                     <span className="font-medium">{project.beneficiaries}</span>
                   </div>
                 </div>
                 
-                <p className="text-sm text-gray-700 italic">{project.impact}</p>
+                <p className="text-sm text-gray-900 italic">{project.impact}</p>
               </motion.div>
             ))}
           </div>
