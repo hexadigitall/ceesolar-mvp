@@ -111,15 +111,15 @@ const Header = () => {
                 </button>
                 {isServicesOpen && (
                   <div className="pl-4 mt-3 space-y-1 bg-gray-50 rounded-md p-3 ml-2">
-                    <Link href="/mini-grids" onClick={closeMobileMenu} className="block text-sm font-medium text-gray-800 hover:text-primary hover:bg-white rounded-md px-3 py-2 transition-colors">
+                    <Link href="/mini-grids" onClick={closeMobileMenu} className="block text-sm font-medium text-black hover:text-primary hover:bg-white rounded-md px-3 py-2 transition-colors">
                       <div className="font-medium">Mini-Grids</div>
                       <div className="text-xs text-gray-900 mt-1">Community power solutions</div>
                     </Link>
-                    <Link href="/energy-services" onClick={closeMobileMenu} className="block text-sm font-medium text-gray-800 hover:text-primary hover:bg-white rounded-md px-3 py-2 transition-colors">
+                    <Link href="/energy-services" onClick={closeMobileMenu} className="block text-sm font-medium text-black hover:text-primary hover:bg-white rounded-md px-3 py-2 transition-colors">
                       <div className="font-medium">Energy Services</div>
                       <div className="text-xs text-gray-900 mt-1">Commercial & industrial solutions</div>
                     </Link>
-                    <Link href="/energy-management" onClick={closeMobileMenu} className="block text-sm font-medium text-gray-800 hover:text-primary hover:bg-white rounded-md px-3 py-2 transition-colors">
+                    <Link href="/energy-management" onClick={closeMobileMenu} className="block text-sm font-medium text-black hover:text-primary hover:bg-white rounded-md px-3 py-2 transition-colors">
                       <div className="font-medium">Energy Management</div>
                       <div className="text-xs text-gray-900 mt-1">Advisory & project management</div>
                     </Link>

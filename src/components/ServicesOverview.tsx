@@ -79,7 +79,7 @@ const ServicesOverview = ({
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.2 }}
                         viewport={{ once: true }}
-                        className="text-lg sm:text-xl text-gray-800 max-w-3xl mx-auto leading-relaxed"
+                        className="text-lg sm:text-xl text-black max-w-3xl mx-auto leading-relaxed"
                     >
                         {subheading}
                     </motion.p>
@@ -123,14 +123,14 @@ const ServicesOverview = ({
                                 
                                 <CardContent className="flex-grow flex flex-col justify-between p-6 pt-0">
                                     <div>
-                                        <p className="text-gray-800 mb-6 leading-relaxed text-base">
+                                        <p className="text-black mb-6 leading-relaxed text-base">
                                             {service.description}
                                         </p>
                                         
                                         {service.features && (
                                             <ul className="space-y-3 mb-6">
                                                 {service.features.map((feature, idx) => (
-                                                    <li key={idx} className="flex items-start text-sm text-gray-800">
+                                                    <li key={idx} className="flex items-start text-sm text-black">
                                                         <div className="w-2 h-2 bg-primary rounded-full mr-3 flex-shrink-0 mt-1.5" />
                                                         <span>{feature}</span>
                                                     </li>

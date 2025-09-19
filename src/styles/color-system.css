@@ -1,0 +1,145 @@
+/* CEESOLAR COLOR SYSTEM - ENFORCES READABLE COLORS */
+/* This file ELIMINATES all problematic gray colors and ensures visibility */
+
+/* BANNED CLASSES - These should NEVER be used */
+/* .text-gray-500, .text-gray-600, .text-gray-700 are TOO LIGHT */
+
+/* APPROVED TEXT COLORS ONLY */
+:root {
+  /* READABLE TEXT COLORS */
+  --text-primary: #1a1a1a;        /* Almost black - maximum readability */
+  --text-secondary: #2d2d2d;      /* Dark gray - still very readable */
+  --text-muted: #404040;          /* Medium gray - minimum acceptable */
+  --text-accent: var(--primary);   /* Ceesolar green for highlights */
+  
+  /* BACKGROUND COLORS */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8fafc;
+  --bg-muted: #f1f5f9;
+}
+
+/* ENFORCE READABLE TEXT - Replace all problematic grays */
+.text-readable-primary {
+  color: var(--text-primary) !important;
+}
+
+.text-readable-secondary {
+  color: var(--text-secondary) !important;
+}
+
+.text-readable-muted {
+  color: var(--text-muted) !important;
+}
+
+/* OVERRIDE PROBLEMATIC CLASSES */
+.text-gray-500,
+.text-gray-600,
+.text-gray-700 {
+  color: var(--text-primary) !important;
+  /* Force all light grays to be dark and readable */
+}
+
+/* UTILITY CLASSES FOR CONSISTENT TEXT */
+.heading-text {
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
+.body-text {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.subtext {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+}
+
+.description-text {
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* SECTION TEXT STANDARDIZATION */
+.section-heading {
+  color: var(--text-primary);
+  font-weight: 700;
+  font-family: var(--font-montserrat);
+}
+
+.section-description {
+  color: var(--text-secondary);
+  font-size: 1.125rem;
+  line-height: 1.7;
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.card-title {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.card-description {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* FORM TEXT STANDARDIZATION */
+.form-label {
+  color: var(--text-primary);
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.form-help {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+}
+
+/* BUTTON TEXT */
+.btn-text {
+  color: inherit;
+  font-weight: 500;
+}
+
+/* LIST TEXT */
+.list-text {
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* ENSURE HIGH CONTRAST */
+@media (prefers-contrast: high) {
+  :root {
+    --text-primary: #000000;
+    --text-secondary: #1a1a1a;
+    --text-muted: #2d2d2d;
+  }
+}
+
+/* FORCE OVERRIDE FOR ANY REMAINING LIGHT GRAYS */
+[class*="text-gray-5"],
+[class*="text-gray-6"],
+[class*="text-gray-7"] {
+  color: var(--text-primary) !important;
+}
+
+/* RESPONSIVE TEXT SIZES WITH READABLE COLORS */
+.responsive-heading {
+  color: var(--text-primary);
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  font-weight: 700;
+}
+
+.responsive-subheading {
+  color: var(--text-secondary);
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  line-height: 1.6;
+}
+
+.responsive-body {
+  color: var(--text-secondary);
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  line-height: 1.7;
+}

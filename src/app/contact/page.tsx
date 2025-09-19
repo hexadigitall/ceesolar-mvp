@@ -136,7 +136,7 @@ export default function ContactPage() {
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid gap-6 md:grid-cols-2">
                     <div>
-                      <label htmlFor="name" className="block text-sm font-medium text-gray-800 mb-2">
+                      <label htmlFor="name" className="block text-sm font-medium text-black mb-2">
                         Full Name *
                       </label>
                       <input
@@ -152,7 +152,7 @@ export default function ContactPage() {
                     </div>
                     
                     <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-gray-800 mb-2">
+                      <label htmlFor="email" className="block text-sm font-medium text-black mb-2">
                         Email Address *
                       </label>
                       <input
@@ -170,7 +170,7 @@ export default function ContactPage() {
 
                   <div className="grid gap-6 md:grid-cols-2">
                     <div>
-                      <label htmlFor="phone" className="block text-sm font-medium text-gray-800 mb-2">
+                      <label htmlFor="phone" className="block text-sm font-medium text-black mb-2">
                         Phone Number
                       </label>
                       <input
@@ -185,7 +185,7 @@ export default function ContactPage() {
                     </div>
                     
                     <div>
-                      <label htmlFor="company" className="block text-sm font-medium text-gray-800 mb-2">
+                      <label htmlFor="company" className="block text-sm font-medium text-black mb-2">
                         Company/Organization
                       </label>
                       <input
@@ -201,7 +201,7 @@ export default function ContactPage() {
                   </div>
 
                   <div>
-                    <label htmlFor="service" className="block text-sm font-medium text-gray-800 mb-2">
+                    <label htmlFor="service" className="block text-sm font-medium text-black mb-2">
                       Service of Interest
                     </label>
                     <select
@@ -219,7 +219,7 @@ export default function ContactPage() {
                   </div>
 
                   <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-gray-800 mb-2">
+                    <label htmlFor="message" className="block text-sm font-medium text-black mb-2">
                       Message *
                     </label>
                     <textarea
@@ -262,7 +262,7 @@ export default function ContactPage() {
               className="px-4 sm:px-0"
             >
               <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold font-montserrat mb-6 sm:mb-8">Get in Touch</h2>
-              <p className="text-base sm:text-lg text-gray-800 mb-6 sm:mb-8 leading-relaxed">
+              <p className="text-base sm:text-lg text-black mb-6 sm:mb-8 leading-relaxed">
                 We&apos;re here to help you with your energy needs. Reach out to us through any of the channels below, and our team will respond promptly.
               </p>
 
@@ -283,7 +283,7 @@ export default function ContactPage() {
                       <h3 className="text-lg sm:text-xl font-semibold mb-2">{info.title}</h3>
                       <div className="space-y-1">
                         {info.details.map((detail, idx) => (
-                          <p key={idx} className="text-sm sm:text-base text-gray-800 break-words">{detail}</p>
+                          <p key={idx} className="text-sm sm:text-base text-black break-words">{detail}</p>
                         ))}
                       </div>
                     </div>

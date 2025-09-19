@@ -1,0 +1,170 @@
+/* CEESOLAR DESIGN SYSTEM */
+/* Consistent spacing, sizing, and responsive behavior across all components */
+
+:root {
+  /* SPACING SYSTEM */
+  --space-xs: 0.25rem;    /* 4px */
+  --space-sm: 0.5rem;     /* 8px */
+  --space-md: 1rem;       /* 16px */
+  --space-lg: 1.5rem;     /* 24px */
+  --space-xl: 2rem;       /* 32px */
+  --space-2xl: 3rem;      /* 48px */
+  --space-3xl: 4rem;      /* 64px */
+  
+  /* ELEMENT SIZING */
+  --btn-height: 3rem;           /* 48px - consistent button height */
+  --input-height: 3rem;         /* 48px - matching input height */
+  --form-spacing: 1.5rem;       /* 24px - form element spacing */
+  --section-padding-sm: 4rem;   /* 64px - mobile section padding */
+  --section-padding-lg: 6rem;   /* 96px - desktop section padding */
+  
+  /* CONTAINER SYSTEM */
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1280px;
+  --container-2xl: 1536px;
+}
+
+/* BUTTON SYSTEM - Consistent across all components */
+.btn-primary {
+  height: var(--btn-height);
+  padding: 0 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  min-width: fit-content;
+}
+
+.btn-primary:not(:last-child) {
+  margin-right: var(--space-lg);
+}
+
+/* FORM SYSTEM - Consistent heights and spacing */
+.form-input {
+  height: var(--input-height);
+  padding: 0 1rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #d1d5db;
+  transition: all 0.2s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  ring: 2px;
+  ring-color: var(--primary);
+  border-color: transparent;
+}
+
+.form-group {
+  margin-bottom: var(--form-spacing);
+}
+
+.form-grid {
+  display: grid;
+  gap: var(--form-spacing);
+}
+
+@media (min-width: 768px) {
+  .form-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* SECTION SYSTEM - Consistent padding */
+.section {
+  padding: var(--section-padding-sm) 0;
+}
+
+@media (min-width: 1024px) {
+  .section {
+    padding: var(--section-padding-lg) 0;
+  }
+}
+
+/* CONTAINER SYSTEM */
+.container-responsive {
+  width: 100%;
+  max-width: var(--container-2xl);
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container-responsive {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-responsive {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* CARD SYSTEM */
+.card {
+  background: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: var(--space-xl);
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+/* SPACING UTILITIES */
+.space-y-sm > * + * { margin-top: var(--space-sm); }
+.space-y-md > * + * { margin-top: var(--space-md); }
+.space-y-lg > * + * { margin-top: var(--space-lg); }
+.space-y-xl > * + * { margin-top: var(--space-xl); }
+
+.space-x-sm > * + * { margin-left: var(--space-sm); }
+.space-x-md > * + * { margin-left: var(--space-md); }
+.space-x-lg > * + * { margin-left: var(--space-lg); }
+.space-x-xl > * + * { margin-left: var(--space-xl); }
+
+/* RESPONSIVE UTILITIES */
+.flex-responsive {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+@media (min-width: 640px) {
+  .flex-responsive {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* GRID RESPONSIVE */
+.grid-responsive {
+  display: grid;
+  gap: var(--space-xl);
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .grid-responsive {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-responsive {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

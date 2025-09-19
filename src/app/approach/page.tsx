@@ -78,7 +78,7 @@ export default function ApproachPage() {
             className="text-center mb-12 sm:mb-16"
           >
             <h2 className="text-3xl sm:text-4xl font-bold font-montserrat mb-4 text-gray-900">Our Methodology</h2>
-            <p className="text-lg sm:text-xl text-gray-800 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg sm:text-xl text-black max-w-3xl mx-auto leading-relaxed">
               A proven four-phase approach that ensures successful project delivery and sustainable impact
             </p>
           </motion.div>
@@ -100,13 +100,13 @@ export default function ApproachPage() {
                   <h3 className="text-xl font-semibold text-gray-900">{approach.title}</h3>
                 </div>
                 
-                <p className="text-gray-800 mb-6 leading-relaxed">
+                <p className="text-black mb-6 leading-relaxed">
                   {approach.description}
                 </p>
                 
                 <ul className="space-y-3">
                   {approach.steps.map((step, idx) => (
-                    <li key={idx} className="flex items-start text-sm text-gray-800">
+                    <li key={idx} className="flex items-start text-sm text-black">
                       <div className="w-2 h-2 bg-primary rounded-full mr-3 flex-shrink-0 mt-1.5" />
                       <span>{step}</span>
                     </li>
@@ -129,7 +129,7 @@ export default function ApproachPage() {
             className="text-center mb-12 sm:mb-16"
           >
             <h2 className="text-3xl sm:text-4xl font-bold font-montserrat mb-4 text-gray-900">Guiding Principles</h2>
-            <p className="text-lg sm:text-xl text-gray-800 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg sm:text-xl text-black max-w-3xl mx-auto leading-relaxed">
               The values and commitments that shape every aspect of our work
             </p>
           </motion.div>
@@ -145,7 +145,7 @@ export default function ApproachPage() {
                 className="flex items-start space-x-3 p-4 bg-white rounded-lg shadow-sm"
               >
                 <CheckCircle className="w-6 h-6 text-primary flex-shrink-0 mt-0.5" />
-                <span className="text-gray-800 leading-relaxed">{principle}</span>
+                <span className="text-black leading-relaxed">{principle}</span>
               </motion.div>
             ))}
           </div>

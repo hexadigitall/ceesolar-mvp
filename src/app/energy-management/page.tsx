@@ -108,7 +108,7 @@ export default function EnergyManagementPage() {
             className="text-center mb-12 sm:mb-16"
           >
             <h2 className="text-3xl sm:text-4xl font-bold font-montserrat mb-4 text-gray-900">Our Management Services</h2>
-            <p className="text-lg sm:text-xl text-gray-800 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg sm:text-xl text-black max-w-3xl mx-auto leading-relaxed">
               Comprehensive energy management solutions to optimize your operations and reduce costs
             </p>
           </motion.div>
@@ -130,13 +130,13 @@ export default function EnergyManagementPage() {
                   <h3 className="text-xl font-semibold text-gray-900 leading-tight">{service.title}</h3>
                 </div>
                 
-                <p className="text-gray-800 mb-6 leading-relaxed">
+                <p className="text-black mb-6 leading-relaxed">
                   {service.description}
                 </p>
                 
                 <ul className="space-y-3">
                   {service.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-start text-sm text-gray-800">
+                    <li key={idx} className="flex items-start text-sm text-black">
                       <div className="w-2 h-2 bg-primary rounded-full mr-3 flex-shrink-0 mt-1.5" />
                       <span>{feature}</span>
                     </li>
@@ -159,7 +159,7 @@ export default function EnergyManagementPage() {
               viewport={{ once: true }}
             >
               <h2 className="text-3xl sm:text-4xl font-bold font-montserrat mb-6 text-gray-900">Why Choose Our Energy Management?</h2>
-              <p className="text-lg text-gray-800 mb-8 leading-relaxed">
+              <p className="text-lg text-black mb-8 leading-relaxed">
                 Our comprehensive approach to energy management delivers measurable results and long-term value for your organization.
               </p>
               
@@ -174,7 +174,7 @@ export default function EnergyManagementPage() {
                     className="flex items-start space-x-3"
                   >
                     <CheckCircle className="w-6 h-6 text-primary flex-shrink-0 mt-0.5" />
-                    <span className="text-gray-800 leading-relaxed">{benefit}</span>
+                    <span className="text-black leading-relaxed">{benefit}</span>
                   </motion.div>
                 ))}
               </div>
@@ -190,16 +190,16 @@ export default function EnergyManagementPage() {
               <div className="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-2xl p-8 text-center">
                 <div className="text-4xl font-bold text-primary mb-2">20-40%</div>
                 <div className="text-lg font-semibold text-gray-900 mb-2">Cost Reduction</div>
-                <div className="text-gray-800 mb-6">Average energy cost savings achieved through our optimization strategies</div>
+                <div className="text-black mb-6">Average energy cost savings achieved through our optimization strategies</div>
                 
                 <div className="grid grid-cols-2 gap-4 text-center">
                   <div className="p-4 bg-white rounded-lg">
                     <div className="text-2xl font-bold text-secondary mb-1">95%</div>
-                    <div className="text-sm text-gray-800">Client Satisfaction</div>
+                    <div className="text-sm text-black">Client Satisfaction</div>
                   </div>
                   <div className="p-4 bg-white rounded-lg">
                     <div className="text-2xl font-bold text-primary mb-1">50+</div>
-                    <div className="text-sm text-gray-800">Projects Completed</div>
+                    <div className="text-sm text-black">Projects Completed</div>
                   </div>
                 </div>
               </div>
@@ -219,7 +219,7 @@ export default function EnergyManagementPage() {
             className="text-center mb-12 sm:mb-16"
           >
             <h2 className="text-3xl sm:text-4xl font-bold font-montserrat mb-4 text-gray-900">Industries We Serve</h2>
-            <p className="text-lg sm:text-xl text-gray-800 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg sm:text-xl text-black max-w-3xl mx-auto leading-relaxed">
               Specialized energy management solutions across diverse industry sectors
             </p>
           </motion.div>
@@ -236,7 +236,7 @@ export default function EnergyManagementPage() {
               >
                 <div className="text-4xl mb-4">{industry.icon}</div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">{industry.name}</h3>
-                <p className="text-sm text-gray-800">{industry.description}</p>
+                <p className="text-sm text-black">{industry.description}</p>
               </motion.div>
             ))}
           </div>

@@ -121,7 +121,7 @@ export default function EnergyServicesPage() {
             className="text-center mb-12 sm:mb-16"
           >
             <h2 className="text-3xl sm:text-4xl font-bold font-montserrat mb-4 text-gray-900">Our Services</h2>
-            <p className="text-lg sm:text-xl text-gray-800 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg sm:text-xl text-black max-w-3xl mx-auto leading-relaxed">
               Tailored energy solutions designed to reduce costs and improve efficiency for your business
             </p>
           </motion.div>
@@ -143,7 +143,7 @@ export default function EnergyServicesPage() {
                   <h3 className="text-xl font-semibold text-gray-900 leading-tight">{service.title}</h3>
                 </div>
                 
-                <p className="text-gray-800 mb-6 leading-relaxed">
+                <p className="text-black mb-6 leading-relaxed">
                   {service.description}
                 </p>
                 
@@ -151,7 +151,7 @@ export default function EnergyServicesPage() {
                   <h4 className="font-semibold text-gray-900 mb-3">Key Features:</h4>
                   <ul className="space-y-2">
                     {service.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-start text-sm text-gray-800">
+                      <li key={idx} className="flex items-start text-sm text-black">
                         <CheckCircle className="w-4 h-4 text-primary mr-2 flex-shrink-0 mt-0.5" />
                         <span>{feature}</span>
                       </li>
@@ -179,7 +179,7 @@ export default function EnergyServicesPage() {
             className="text-center mb-12 sm:mb-16"
           >
             <h2 className="text-3xl sm:text-4xl font-bold font-montserrat mb-4 text-gray-900">Sectors We Serve</h2>
-            <p className="text-lg sm:text-xl text-gray-800 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg sm:text-xl text-black max-w-3xl mx-auto leading-relaxed">
               Delivering energy solutions across diverse industries and business sectors
             </p>
           </motion.div>
@@ -213,7 +213,7 @@ export default function EnergyServicesPage() {
             className="text-center mb-12 sm:mb-16"
           >
             <h2 className="text-3xl sm:text-4xl font-bold font-montserrat mb-4 text-gray-900">Our Process</h2>
-            <p className="text-lg sm:text-xl text-gray-800 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg sm:text-xl text-black max-w-3xl mx-auto leading-relaxed">
               A streamlined approach to delivering your energy solution from consultation to ongoing support
             </p>
           </motion.div>
@@ -232,7 +232,7 @@ export default function EnergyServicesPage() {
                   {step.step}
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">{step.title}</h3>
-                <p className="text-gray-800 leading-relaxed">{step.description}</p>
+                <p className="text-black leading-relaxed">{step.description}</p>
               </motion.div>
             ))}
           </div>

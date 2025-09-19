@@ -73,7 +73,7 @@ export default function AboutPage() {
               >
                 <div className="flex items-center mb-6">
                   <Eye className="w-8 h-8 text-primary mr-4" />
-                  <h2 className="text-3xl font-bold font-montserrat">Our Mission</h2>
+                  <h2 className="text-3xl font-bold font-montserrat text-black">Our Mission</h2>
                 </div>
                 <p className="text-lg text-gray-900 leading-relaxed mb-8">
                   To accelerate energy access across Africa by developing innovative, scalable, and sustainable energy solutions that empower communities, drive economic growth, and create lasting social impact.
@@ -81,7 +81,7 @@ export default function AboutPage() {
                 
                 <div className="flex items-center mb-6">
                   <Target className="w-8 h-8 text-primary mr-4" />
-                  <h2 className="text-3xl font-bold font-montserrat">Our Vision</h2>
+                  <h2 className="text-3xl font-bold font-montserrat text-black">Our Vision</h2>
                 </div>
                 <p className="text-lg text-gray-900 leading-relaxed">
                   To be Africa&apos;s leading energy company, transforming communities through reliable, clean, and affordable energy solutions while fostering sustainable development across the continent.
@@ -115,7 +115,7 @@ export default function AboutPage() {
             viewport={{ once: true }}
             className="text-center mb-12 sm:mb-16"
           >
-            <h2 className="text-3xl sm:text-4xl font-bold font-montserrat mb-4">Our Values</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold font-montserrat text-black mb-4">Our Values</h2>
             <p className="text-lg sm:text-xl text-gray-900 max-w-3xl mx-auto leading-relaxed">
               The principles that guide our work and define our commitment to excellence
             </p>
@@ -134,7 +134,7 @@ export default function AboutPage() {
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <value.icon className="w-8 h-8 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">{value.title}</h3>
+                <h3 className="text-xl font-semibold text-black mb-3">{value.title}</h3>
                 <p className="text-gray-900">{value.description}</p>
               </motion.div>
             ))}
@@ -186,7 +186,7 @@ export default function AboutPage() {
             viewport={{ once: true }}
             className="max-w-4xl mx-auto text-center"
           >
-            <h2 className="text-4xl font-bold font-montserrat mb-8">Our Story</h2>
+            <h2 className="text-4xl font-bold font-montserrat text-black mb-8">Our Story</h2>
             <div className="text-lg text-gray-900 leading-relaxed space-y-6">
               <p>
                 Founded with a vision to transform Africa&apos;s energy landscape, Ceesolar Energy Limited emerged from the recognition that energy access is fundamental to economic development and social progress.

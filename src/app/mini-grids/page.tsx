@@ -123,7 +123,7 @@ export default function MiniGridsPage() {
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-4xl font-bold font-montserrat mb-6">What Are Mini-Grids?</h2>
+              <h2 className="text-4xl font-bold font-montserrat text-black mb-6">What Are Mini-Grids?</h2>
               <div className="space-y-4 text-lg text-gray-900 leading-relaxed">
                 <p>
                   Mini-grids are localized electricity distribution networks that operate independently from the national grid. They provide reliable, clean energy to communities that are either unconnected or poorly served by centralized power systems.
@@ -149,7 +149,7 @@ export default function MiniGridsPage() {
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                     <benefit.icon className="w-6 h-6 text-primary" />
                   </div>
-                  <h3 className="text-lg font-semibold mb-2">{benefit.title}</h3>
+                  <h3 className="text-lg font-semibold text-black mb-2">{benefit.title}</h3>
                   <p className="text-gray-900 text-sm">{benefit.description}</p>
                 </div>
               ))}
@@ -168,7 +168,7 @@ export default function MiniGridsPage() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl font-bold font-montserrat mb-4">Key Features & Capabilities</h2>
+            <h2 className="text-4xl font-bold font-montserrat text-black mb-4">Key Features & Capabilities</h2>
             <p className="text-xl text-gray-900 max-w-3xl mx-auto">
               Our mini-grid systems are designed with cutting-edge technology and community-centric approaches
             </p>
@@ -202,7 +202,7 @@ export default function MiniGridsPage() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl font-bold font-montserrat mb-4">Our Mini-Grid Projects</h2>
+            <h2 className="text-4xl font-bold font-montserrat text-black mb-4">Our Mini-Grid Projects</h2>
             <p className="text-xl text-gray-900 max-w-3xl mx-auto">
               Real impact across communities - transforming lives through reliable energy access
             </p>
