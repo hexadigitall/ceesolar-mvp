@@ -134,16 +134,16 @@ const Footer = () => {
 
                 {/* Newsletter Signup */}
                 <div className="mt-12 pt-8 border-t border-white/20">
-                    <div className="max-w-md mx-auto text-center">
+                    <div className="max-w-lg mx-auto text-center">
                         <h3 className="text-lg font-semibold mb-4 text-white">Stay Connected</h3>
                         <p className="text-white/80 mb-6">Get insights on energy innovation and sustainable development across Africa.</p>
-                        <div className="flex gap-2">
+                        <div className="flex flex-col sm:flex-row gap-3 sm:gap-2">
                             <input
                                 type="email"
                                 placeholder="Enter your email"
-                                className="flex-1 px-4 py-2 bg-white/10 border border-white/20 rounded-md text-white placeholder-white/60 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-white/40 focus:border-white/40"
+                                className="flex-1 h-12 px-4 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/60 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-white/40 focus:border-white/40 text-base"
                             />
-                            <Button className="px-6 py-2 bg-white text-primary hover:bg-white/90 border-0">
+                            <Button className="h-12 px-8 bg-white text-primary hover:bg-white/90 border-0 rounded-lg font-medium text-base whitespace-nowrap">
                                 Subscribe
                             </Button>
                         </div>

@@ -1,7 +1,7 @@
 "use client";
 import { motion } from 'framer-motion';
 import { Button } from './ui/button';
-import { ArrowRight, Calculator, Phone, Zap, Leaf, Shield } from 'lucide-react';
+import { ArrowRight, Calculator, Phone, Leaf, Lightbulb, Users } from 'lucide-react';
 import PartnerLogos from './PartnerLogos';
 
 interface HeroProps {
@@ -71,12 +71,12 @@ const HeroSection = ({
                     className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-10 max-w-4xl mx-auto"
                 >
                     {subpoints.map((point, index) => {
-                        const icons = [Zap, Shield, Leaf];
-                        const colors = ['text-primary', 'text-secondary', 'text-accent'];
-                        const IconComponent = icons[index] || Zap;
+                        const icons = [Lightbulb, Users, Leaf]; // Energy Innovation, Community Impact, Sustainable Growth
+                        const colors = ['text-yellow-400', 'text-blue-300', 'text-green-300'];
+                        const IconComponent = icons[index] || Lightbulb;
                         return (
                             <div key={point} className="flex items-center justify-center space-x-2 text-base sm:text-lg py-2">
-                                <IconComponent className={`w-5 h-5 sm:w-6 sm:h-6 ${colors[index] || 'text-primary'} flex-shrink-0`} />
+                                <IconComponent className={`w-5 h-5 sm:w-6 sm:h-6 ${colors[index] || 'text-yellow-400'} flex-shrink-0`} />
                                 <span className="text-center">{point}</span>
                             </div>
                         );

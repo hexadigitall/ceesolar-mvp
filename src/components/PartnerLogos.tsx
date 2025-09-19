@@ -26,7 +26,7 @@ const PartnerLogos = () => {
         {
             name: "Renewable Energy Association of Nigeria",
             shortName: "REAN",
-            logo: "/assets/partners/rean-logo.png",
+            logo: "/assets/partners/rean-logo-black.png",
             mobileHeight: "h-8",
             desktopHeight: "md:h-12"
         }
@@ -41,7 +41,7 @@ const PartnerLogos = () => {
                         alt={partner.name}
                         width={120}
                         height={60}
-                        className={`${partner.mobileHeight} ${partner.desktopHeight} w-auto object-contain filter brightness-0 invert`}
+                        className={`${partner.mobileHeight} ${partner.desktopHeight} w-auto object-contain ${partner.shortName === 'REAN' ? '' : 'filter brightness-0 invert'}`}
                         style={{ width: 'auto' }}
                     />
                 </div>
