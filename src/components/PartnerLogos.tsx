@@ -41,7 +41,7 @@ const PartnerLogos = () => {
                         alt={partner.name}
                         width={120}
                         height={60}
-                        className={`${partner.mobileHeight} ${partner.desktopHeight} w-auto object-contain ${partner.shortName === 'REAN' ? '' : 'filter brightness-0 invert'}`}
+                        className={`${partner.mobileHeight} ${partner.desktopHeight} w-auto object-contain filter brightness-0 invert`}
                         style={{ width: 'auto' }}
                     />
                 </div>
