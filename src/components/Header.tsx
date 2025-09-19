@@ -64,11 +64,6 @@ const Header = () => {
             </div>
           </div>
           
-          <Link href="/experience" className="text-sm font-medium text-foreground hover:text-primary transition-colors">Experience</Link>
-          <Link href="/resources" className="text-sm font-medium text-foreground hover:text-primary transition-colors">Resources</Link>
-          <Link href="/team" className="text-sm font-medium text-foreground hover:text-primary transition-colors">Team</Link>
-          <Link href="/careers" className="text-sm font-medium text-foreground hover:text-primary transition-colors">Careers</Link>
-          <Link href="/blog" className="text-sm font-medium text-foreground hover:text-primary transition-colors">Blog</Link>
           <Link href="/contact" className="text-sm font-medium text-foreground hover:text-primary transition-colors">Contact</Link>
         </nav>
 
@@ -126,11 +121,6 @@ const Header = () => {
                   </div>
                 )}
               </div>
-              <Link href="/experience" onClick={closeMobileMenu} className="text-sm font-medium py-2 hover:text-primary transition-colors">Experience</Link>
-              <Link href="/resources" onClick={closeMobileMenu} className="text-sm font-medium py-2 hover:text-primary transition-colors">Resources</Link>
-              <Link href="/team" onClick={closeMobileMenu} className="text-sm font-medium py-2 hover:text-primary transition-colors">Team</Link>
-              <Link href="/careers" onClick={closeMobileMenu} className="text-sm font-medium py-2 hover:text-primary transition-colors">Careers</Link>
-              <Link href="/blog" onClick={closeMobileMenu} className="text-sm font-medium py-2 hover:text-primary transition-colors">Blog</Link>
               <Link href="/contact" onClick={closeMobileMenu} className="text-sm font-medium py-2 hover:text-primary transition-colors">Contact</Link>
               
               <div className="pt-4 space-y-3 border-t">
